@@ -12,6 +12,7 @@ body {
 	background-color: black;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 button{
@@ -22,7 +23,6 @@ main{
 background-color: #fff;
 box-shadow: 0 0 5 #ddd8d8;
 min-height: 500px;
-margin: 50px auto;
 border-radius: 20px;
 max-width: 850px;
 padding: 20px;
