@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: black;
+}
+
+button{
+  font-family: "Poppins", sans-serif;
+
+}
+
+
+
+main{
+	background-color: #fff;
+	box-shadow: 0 0 5 #ddd8d8;
+  min-height: 500px;
+	margin: 50px auto;
+	border-radius: 20px;
+	max-width: 850px;
+	padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box{
+  text-align: center;
+}
+
+h1{
+  color: rgb(231, 153, 49);
+  padding: 5px;
+}
+
+p{
+  font-size: 1.1rem;
+}
+
+.dice{
+  padding: 5px;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 50px;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+
+.dice-container{
+  padding: 40px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 20px;
+}
+
+.roll{
+  padding: 8px 30px;
+  font-size: 1.1rem;
+  background-color: rgb(47, 47, 236);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.held{
+  background-color: rgb(214, 173, 39);
+  color: #fff;
+}
+@media screen and (max-width:900px) {
+main{
+  width: 80%;
+}
+}
+@media screen and (max-width:500px) {
+  .dice{
+    font-size: .9rem;
+    width: 45px;
+    height: 45px;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+  main{
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 100vh;
+  }
+
+  .dice-container{
+    padding: 0;
+    grid-template-columns: repeat(5, 50px);
+  }
+}
+
+@media screen and (max-width:340px) {
+  .dice-container{
+    grid-template-columns: repeat(3, 50px);
+    margin-top: 20px;
+  }
+  p{
+    font-size: .9rem;
+  }
 }
