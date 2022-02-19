@@ -10,27 +10,26 @@
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: black;
+	display: flex;
+	align-items: center;
 }
 
 button{
   font-family: "Poppins", sans-serif;
-
 }
 
-
-
 main{
-	background-color: #fff;
-	box-shadow: 0 0 5 #ddd8d8;
-  min-height: 500px;
-	margin: 50px auto;
-	border-radius: 20px;
-	max-width: 850px;
-	padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+background-color: #fff;
+box-shadow: 0 0 5 #ddd8d8;
+min-height: 500px;
+margin: 50px auto;
+border-radius: 20px;
+max-width: 850px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .text-box{
